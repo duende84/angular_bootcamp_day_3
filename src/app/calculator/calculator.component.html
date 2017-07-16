@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<div>
+  <app-display [value]="operation" (keyEmitter)="changeOperation($event)"></app-display>
+</div>
+<div>
+  <app-button *ngFor="let button of buttons" [value]="button" (buttonEmitter)="changeOperation($event)"></app-button>
+</div>
